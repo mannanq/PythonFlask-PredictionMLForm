@@ -9,6 +9,7 @@ import sklearn.cross_validation
 df = pd.read_csv('height.csv')
 x = df['Weight'].values
 y = df['Height'].values
+
 x = x.reshape(-1, 1)
 y = y.reshape(-1, 1)
 lm = LinearRegression()
